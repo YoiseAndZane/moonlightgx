@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a0b3b;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+header {
+  background: #4b0082;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2; }
+  100% { text-shadow: 0 0 20px #ffccff, 0 0 40px #8a2be2; }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #6a0dad;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #8a2be2;
+  box-shadow: 0 0 10px #ffccff;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0;
+  box-shadow: 0 0 10px #6a0dad;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  background: #8a2be2;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background: #ff66ff;
+  box-shadow: 0 0 15px #ffccff;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.game-card {
+  background: #4b0082;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 5px #8a2be2;
+}
+
+.game-card:hover {
+  background: #6a0dad;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffccff, 0 0 40px #8a2be2;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4b0082;
+  margin-top: 40px;
+  color: #ccc;
+  font-size: 0.9em;
+}
