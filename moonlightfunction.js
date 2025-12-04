@@ -1,4 +1,3 @@
-// Search functionality
 const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('searchInput');
 
@@ -9,13 +8,11 @@ searchBtn.addEventListener('click', () => {
   }
 });
 
-// Game card click functionality
 const gameCards = document.querySelectorAll('.game-card');
 
 gameCards.forEach(card => {
   card.addEventListener('click', () => {
     const gameId = card.dataset.game;
     alert(`Opening ${gameId}...`);
-    // Example: window.open(`https://example.com/${gameId}`, '_blank');
   });
 });
