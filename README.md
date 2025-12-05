@@ -1,5 +1,7 @@
 # moonlightgx
 MoonlightGX in its latest fresh new version 21.3
 
-DISCLAIMER
-as You see i am using HTML, CSS, JS for this, this is only because this is a mock up version of what is soon to be the fully working version of V21
+MAJOR UPDATES
+UI/UX COMPLETE
+
+I am now going to be taking a little break from prorgramming, just for a day, then i will be working on the java script and hopfully the full release of V21 will offically be able to come out!
